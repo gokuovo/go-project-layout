@@ -1,17 +1,17 @@
 # `/pkg`
 
-Library code that's ok to use by external applications (e.g., `/pkg/mypubliclib`). Other projects will import these libraries expecting them to work, so think twice before you put something here :-) Note that the `internal` directory is a better way to ensure your private packages are not importable because it's enforced by Go. The `/pkg` directory is still a good way to explicitly communicate that the code in that directory is safe for use by others. The [`I'll take pkg over internal`](https://travisjeffery.com/ill-take-pkg-over-internal/) blog post by Travis Jeffery provides a good overview of the `pkg` and `internal` directories and when it might make sense to use them.
+外部应用程序可以使用的库代码（例如 `/pkg/mypubliclib`）。其他项目会导入这些库，并期望它们能正常工作，所以在把东西放在这里之前请三思 :-) 请注意，`internal` 目录是确保您的私有包不被导入的更好方法，因为它是由 Go 强制执行的。`/pkg` 目录仍然是明确传达该目录中的代码可供他人安全使用的好方法。Travis Jeffery 的博客文章 [“我更喜欢 pkg 而不是 internal”](https://travisjeffery.com/ill-take-pkg-over-internal/) 很好地概述了 `pkg` 和 `internal` 目录，以及何时使用它们是有意义的。
 
-It's also a way to group Go code in one place when your root directory contains lots of non-Go components and directories making it easier to run various Go tools (as mentioned in these talks: [`Best Practices for Industrial Programming`](https://www.youtube.com/watch?v=PTE4VJIdHPg) from GopherCon EU 2018, [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0) and [GoLab 2018 - Massimiliano Pippi - Project layout patterns in Go](https://www.youtube.com/watch?v=3gQa1LWwuzk)).
+当您的根目录包含许多非 Go 组件和目录时，这也是一种将 Go 代码分组到一个地方的方法，从而可以更轻松地运行各种 Go 工具（如这些演讲中所述：[“工业编程的最佳实践”](https://www.youtube.com/watch?v=PTE4VJIdHPg) 来自 GopherCon EU 2018，[GopherCon 2018: Kat Zien - 如何组织您的 Go 应用](https://www.youtube.com/watch?v=oL6JBUk6tj0) 以及 [GoLab 2018 - Massimiliano Pippi - Go 中的项目布局模式](https://www.youtube.com/watch?v=3gQa1LWwuzk)）。
 
-Note that this is not a universally accepted pattern and for every popular repo that uses it you can find 10 that don't. It's up to you to decide if you want to use this pattern or not. Regardless of whether or not it's a good pattern more people will know what you mean than not. It might a bit confusing for some of the new Go devs, but it's a pretty simple confusion to resolve and that's one of the goals for this project layout repo.
+请注意，这并不是一个被普遍接受的模式，对于每一个使用它的流行仓库，您都可以找到 10 个不使用它的仓库。是否使用此模式取决于您。无论它是否是一个好的模式，大多数人都会明白您的意思。对于一些新的 Go 开发人员来说，这可能会有点困惑，但这是一个非常容易解决的困惑，这也是本项目布局仓库的目标之一。
 
-Ok not to use it if your app project is really small and where an extra level of nesting doesn't add much value (unless you really want to). Think about it when it's getting big enough and your root directory gets pretty busy (especially if you have a lot of non-Go app components).
+如果您的应用项目非常小，且额外的嵌套层级没有增加太多价值，那么不使用它也是可以的（除非您真的想用）。当项目变得足够大且根目录变得相当繁忙时（特别是如果您有许多非 Go 应用组件），请考虑使用它。
 
-The `pkg` directory origins: The old Go source code used to use `pkg` for its packages and then various Go projects in the community started copying the pattern (see [`this`](https://twitter.com/bradfitz/status/1039512487538970624) Brad Fitzpatrick's tweet for more context).
+`pkg` 目录的起源：旧的 Go 源代码曾使用 `pkg` 作为其包目录，随后社区中的各种 Go 项目开始效仿这一模式（有关更多背景信息，请参阅 [Brad Fitzpatrick 的这条推文](https://twitter.com/bradfitz/status/1039512487538970624)）。
 
 
-Examples:
+示例：
 
 * https://github.com/containerd/containerd/tree/main/pkg
 * https://github.com/slimtoolkit/slim/tree/master/pkg

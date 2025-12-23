@@ -1,8 +1,8 @@
 # `/website`
 
-This is the place to put your project's website data if you are not using GitHub pages.
+如果您不使用 GitHub 页面，这就是放置项目网站数据的地方。
 
-Examples:
+示例：
 
 * https://github.com/hashicorp/vault/tree/master/website
 * https://github.com/perkeep/perkeep/tree/master/website

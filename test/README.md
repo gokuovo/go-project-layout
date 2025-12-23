@@ -1,8 +1,8 @@
 # `/test`
 
-Additional external test apps and test data. Feel free to structure the `/test` directory anyway you want. For bigger projects it makes sense to have a data subdirectory. For example, you can have `/test/data` or `/test/testdata` if you need Go to ignore what's in that directory. Note that Go will also ignore directories or files that begin with "." or "_", so you have more flexibility in terms of how you name your test data directory.
+额外的外部测试应用程序和测试数据。您可以随意构建 `/test` 目录。对于较大的项目，拥有一个数据子目录是有意义的。例如，如果您需要 Go 忽略该目录中的内容，可以使用 `/test/data` 或 `/test/testdata`。请注意，Go 还会忽略以 “.” 或 “_” 开头的目录或文件，因此您在命名测试数据目录方面有更大的灵活性。
 
-Examples:
+示例：
 
 * https://github.com/openshift/origin/tree/master/test (test data is in the `/testdata` subdirectory)
 

@@ -1,8 +1,8 @@
 # `/api`
 
-OpenAPI/Swagger specs, JSON schema files, protocol definition files.
+OpenAPI/Swagger 规范、JSON 架构文件、协议定义文件。
 
-Examples:
+示例：
 
 * https://github.com/kubernetes/kubernetes/tree/master/api
 * https://github.com/moby/moby/tree/master/api

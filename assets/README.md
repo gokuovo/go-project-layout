@@ -1,3 +1,3 @@
 # `/assets`
 
-Other assets to go along with your repository (images, logos, etc).
+随仓库一起提供的其他资产（图像、徽标等）。

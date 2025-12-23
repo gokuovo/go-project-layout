@@ -1,10 +1,10 @@
 # `/scripts`
 
-Scripts to perform various build, install, analysis, etc operations.
+执行各种构建、安装、分析等操作的脚本。
 
-These scripts keep the root level Makefile small and simple.
+这些脚本保持根级别的 Makefile 小巧且简单。
 
-Examples:
+示例：
 
 * https://github.com/kubernetes/helm/tree/master/scripts
 * https://github.com/cockroachdb/cockroach/tree/master/scripts

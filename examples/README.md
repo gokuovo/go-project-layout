@@ -1,8 +1,8 @@
 # `/examples`
 
-Examples for your applications and/or public libraries.
+您的应用程序和/或公共库的示例。
 
-Examples:
+示例：
 
 * https://github.com/nats-io/nats.go/tree/master/examples
 * https://github.com/docker-slim/docker-slim/tree/master/examples

@@ -1,14 +1,14 @@
 # `/cmd`
 
-Main applications for this project.
+项目的主要应用程序。
 
-The directory name for each application should match the name of the executable you want to have (e.g., `/cmd/myapp`).
+每个应用程序的目录名称应与您想要的可执行文件名称相匹配（例如，`/cmd/myapp`）。
 
-Don't put a lot of code in the application directory. If you think the code can be imported and used in other projects, then it should live in the `/pkg` directory. If the code is not reusable or if you don't want others to reuse it, put that code in the `/internal` directory. You'll be surprised what others will do, so be explicit about your intentions!
+不要在应用程序目录中放入太多代码。如果您认为代码可以被导入并在其他项目中使用，那么它应该放在 `/pkg` 目录中。如果代码不可重用，或者如果您不希望他人重用它，请将该代码放在 `/internal` 目录中。您会对别人的做法感到惊讶，所以请明确您的意图！
 
-It's common to have a small `main` function that imports and invokes the code from the `/internal` and `/pkg` directories and nothing else.
+通常会有一个小的 `main` 函数，它从 `/internal` 和 `/pkg` 目录导入并调用代码，除此之外别无他法。
 
-Examples:
+示例：
 
 * https://github.com/vmware-tanzu/velero/tree/main/cmd (just a really small `main` function with everything else in packages)
 * https://github.com/moby/moby/tree/master/cmd

@@ -1,10 +1,10 @@
 # `/internal`
 
-Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself. See the Go 1.4 [`release notes`](https://golang.org/doc/go1.4#internalpackages) for more details. Note that you are not limited to the top level `internal` directory. You can have more than one `internal` directory at any level of your project tree.
+私有应用程序和库代码。这是您不希望他人在其应用程序或库中导入的代码。请注意，这种布局模式由 Go 编译器本身强制执行。有关更多详细信息，请参阅 Go 1.4 [`发布说明`](https://golang.org/doc/go1.4#internalpackages)。请注意，您不仅限于顶级 `internal` 目录。您可以在项目树的任何级别拥有多个 `internal` 目录。
 
-You can optionally add a bit of extra structure to your internal packages to separate your shared and non-shared internal code. It's not required (especially for smaller projects), but it's nice to have visual clues showing the intended package use. Your actual application code can go in the `/internal/app` directory (e.g., `/internal/app/myapp`) and the code shared by those apps in the `/internal/pkg` directory (e.g., `/internal/pkg/myprivlib`).
+您可以选择为内部包添加一些额外的结构，以分离共享和非共享的内部代码。这不是必需的（特别是对于较小的项目），但通过视觉线索显示预期的包用途是很有好处的。您的实际应用程序代码可以放在 `/internal/app` 目录（例如 `/internal/app/myapp`），而这些应用程序共享的代码可以放在 `/internal/pkg` 目录（例如 `/internal/pkg/myprivlib`）。
 
-Examples:
+示例：
 
 * https://github.com/hashicorp/terraform/tree/main/internal
 * https://github.com/influxdata/influxdb/tree/master/internal
@@ -16,6 +16,6 @@ Examples:
 
 ## `/internal/pkg`
 
-Examples:
+示例：
 
 * https://github.com/hashicorp/waypoint/tree/main/internal/pkg
